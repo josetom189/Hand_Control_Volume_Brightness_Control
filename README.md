@@ -21,6 +21,7 @@ Install all dependencies:
 ```bash
 pip install opencv-python mediapipe numpy pycaw screen-brightness-control comtypes
 
+---
 
 ## ⚙️ How It Works
 1. **OpenCV** captures your webcam feed.
