@@ -14,15 +14,6 @@ Built with **Python**, **OpenCV**, and **MediaPipe** for real-time hand tracking
 
 ---
 
-## 📦 Requirements
-
-Install all dependencies:
-
-```bash
-pip install opencv-python mediapipe numpy pycaw screen-brightness-control comtypes
-
----
-
 ## ⚙️ How It Works
 1. **OpenCV** captures your webcam feed.
 2. **MediaPipe Hands** detects hand landmarks.
@@ -40,3 +31,12 @@ pip install opencv-python mediapipe numpy pycaw screen-brightness-control comtyp
 2. Run the script:
    ```bash
    python Dualhandcontrol_Volume_Brightness.py
+
+## 📦 Requirements
+
+Install all dependencies:
+
+```bash
+pip install opencv-python mediapipe numpy pycaw screen-brightness-control comtypes
+
+---
