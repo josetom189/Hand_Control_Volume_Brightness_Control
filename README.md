@@ -21,3 +21,41 @@ Install all dependencies:
 ```bash
 pip install opencv-python mediapipe numpy pycaw screen-brightness-control comtypes
 
+
+How It Works
+
+OpenCV captures your webcam feed.
+
+MediaPipe Hands detects hand landmarks.
+
+Script calculates distance between thumb tip (landmark 4) and index tip (landmark 8).
+
+Distance is mapped to a percentage using numpy.interp:
+
+Right Hand → System volume via pycaw
+
+Left Hand → Screen brightness via screen-brightness-control
+
+▶️ Usage
+
+Connect your webcam.
+
+Run:
+
+python Dualhandcontrol_Volume_Brightness.py
+
+
+Gestures:
+
+Right Hand: Thumb & index apart → Increase volume
+
+Left Hand: Thumb & index apart → Increase brightness
+
+Press q to quit.
+
+🖥️ Control Mapping
+Gesture	Hand	Action
+Thumb & index close together	Right	Volume low
+Thumb & index far apart	Right	Volume high
+Thumb & index close together	Left	Brightness low
+Thumb & index far apart	Left	Brightness high
